@@ -6,4 +6,3 @@ flask
 seaborn
 pymongo
 certifi
--e .

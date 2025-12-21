@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: third_project
+Version: 0.0.1
+Author: Shivang
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: flask
+Requires-Dist: seaborn
+Requires-Dist: pymongo
+Requires-Dist: certifi
+Dynamic: author
+Dynamic: requires-dist
