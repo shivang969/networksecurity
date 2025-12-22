@@ -1,0 +1,2 @@
+[2025-12-22 12:05:47,715] 17 root - INFO - Starting division operation
+[2025-12-22 12:05:47,715] 23 root - ERROR - ERROR OCCURED IN PYTHON SCRIPT NAME [/Users/shivang/Desktop/network_security/venv/third_project/network_security/exception/exception.py] LINE NUMBER [18] ERROR MESSAGE [division by zero]
