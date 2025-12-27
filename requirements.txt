@@ -8,4 +8,6 @@ pymongo
 pymongo[srv]
 dotenv
 certifi
+yaml
+dill
 -e .

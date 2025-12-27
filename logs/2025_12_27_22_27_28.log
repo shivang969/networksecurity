@@ -1,0 +1,7 @@
+[2025-12-27 22:27:29,810] 16 root - INFO - intiate the data ingestion
+[2025-12-27 22:27:32,020] 57 root - INFO - performed train test split on the dataframe
+[2025-12-27 22:27:32,020] 60 root - INFO - exporitng train and test file path
+[2025-12-27 22:27:32,063] 35 root - INFO - required number of columns 32
+[2025-12-27 22:27:32,063] 36 root - INFO - data frame has columns32
+[2025-12-27 22:27:32,063] 35 root - INFO - required number of columns 32
+[2025-12-27 22:27:32,063] 36 root - INFO - data frame has columns32
