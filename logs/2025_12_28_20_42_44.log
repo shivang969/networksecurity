@@ -1,0 +1,11 @@
+[2025-12-28 20:42:46,104] 17 root - INFO - intiate the data ingestion
+[2025-12-28 20:42:48,124] 57 root - INFO - performed train test split on the dataframe
+[2025-12-28 20:42:48,124] 60 root - INFO - exporitng train and test file path
+[2025-12-28 20:42:48,166] 35 root - INFO - required number of columns 32
+[2025-12-28 20:42:48,167] 36 root - INFO - data frame has columns32
+[2025-12-28 20:42:48,167] 35 root - INFO - required number of columns 32
+[2025-12-28 20:42:48,167] 36 root - INFO - data frame has columns32
+[2025-12-28 20:42:48,245] 47 root - INFO - entered data_transformation_method 
+[2025-12-28 20:42:48,245] 49 root - INFO - starting data transformation
+[2025-12-28 20:42:48,254] 34 root - INFO - entered get_data_transformer object
+[2025-12-28 20:42:48,254] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}

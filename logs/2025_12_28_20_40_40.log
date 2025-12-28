@@ -1,0 +1,10 @@
+[2025-12-28 20:40:42,357] 17 root - INFO - intiate the data ingestion
+[2025-12-28 20:40:44,721] 57 root - INFO - performed train test split on the dataframe
+[2025-12-28 20:40:44,722] 60 root - INFO - exporitng train and test file path
+[2025-12-28 20:40:44,797] 35 root - INFO - required number of columns 32
+[2025-12-28 20:40:44,797] 36 root - INFO - data frame has columns32
+[2025-12-28 20:40:44,797] 35 root - INFO - required number of columns 32
+[2025-12-28 20:40:44,797] 36 root - INFO - data frame has columns32
+[2025-12-28 20:40:44,961] 47 root - INFO - entered data_transformation_method 
+[2025-12-28 20:40:44,961] 49 root - INFO - starting data transformation
+[2025-12-28 20:40:44,971] 34 root - INFO - entered get_data_transformer object
