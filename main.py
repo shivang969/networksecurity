@@ -5,9 +5,10 @@ from network_security.exception.exception import NetworksecurityException
 from network_security.logging.logger import logging
 from network_security.entity.config_entity import DataIngestconfig
 from network_security.entity.config_entity import TrainigPipelineConfig
-from network_security.entity.config_entity import DataValidationConfig,DataTransformConfig
+from network_security.entity.config_entity import DataValidationConfig,DataTransformConfig,ModelTrainerConfig
 from network_security.components.data_validation import DataValidation
 from network_security.components.data_transformation import DataTransformation
+from network_security.components.model_trainer import ModelTrainer
 
 if __name__=="__main__":
     try:
@@ -25,5 +26,10 @@ if __name__=="__main__":
         data_transformation=DataTransformation(data_validation_artifact,data_transformation_config)
         data_transformation_artifact=data_transformation.initiate_data_transformation()
         print(data_transformation_artifact)
+        logging.info("model training started")
+        model_trainer_config=ModelTrainerConfig(trainingpipelineconfig)
+        model_trainer=ModelTrainer(model_trainer_config,data_transformation_artifact)
+        model_trainer.initiate_model_trainer()
+        
     except Exception as e:
         raise NetworksecurityException(e,sys)

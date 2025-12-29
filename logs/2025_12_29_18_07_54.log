@@ -1,0 +1,15 @@
+[2025-12-29 18:07:55,714] 18 root - INFO - intiate the data ingestion
+[2025-12-29 18:07:57,569] 57 root - INFO - performed train test split on the dataframe
+[2025-12-29 18:07:57,569] 60 root - INFO - exporitng train and test file path
+[2025-12-29 18:07:57,611] 35 root - INFO - required number of columns 32
+[2025-12-29 18:07:57,611] 36 root - INFO - data frame has columns32
+[2025-12-29 18:07:57,611] 35 root - INFO - required number of columns 32
+[2025-12-29 18:07:57,611] 36 root - INFO - data frame has columns32
+[2025-12-29 18:07:57,687] 47 root - INFO - entered data_transformation_method 
+[2025-12-29 18:07:57,687] 49 root - INFO - starting data transformation
+[2025-12-29 18:07:57,696] 34 root - INFO - entered get_data_transformer object
+[2025-12-29 18:07:57,696] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-29 18:07:57,701] 42 root - INFO - entered the save_object function
+[2025-12-29 18:07:57,702] 46 root - INFO - exited the save_object method
+[2025-12-29 18:07:57,702] 29 root - INFO - model training started
+[2025-12-29 18:07:57,703] 73 root - INFO - hypertuning for random_forest

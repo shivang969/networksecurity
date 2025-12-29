@@ -1,0 +1,23 @@
+[2025-12-29 18:23:43,612] 18 root - INFO - intiate the data ingestion
+[2025-12-29 18:23:45,795] 57 root - INFO - performed train test split on the dataframe
+[2025-12-29 18:23:45,795] 60 root - INFO - exporitng train and test file path
+[2025-12-29 18:23:45,836] 35 root - INFO - required number of columns 32
+[2025-12-29 18:23:45,836] 36 root - INFO - data frame has columns32
+[2025-12-29 18:23:45,836] 35 root - INFO - required number of columns 32
+[2025-12-29 18:23:45,836] 36 root - INFO - data frame has columns32
+[2025-12-29 18:23:45,916] 47 root - INFO - entered data_transformation_method 
+[2025-12-29 18:23:45,916] 49 root - INFO - starting data transformation
+[2025-12-29 18:23:45,924] 34 root - INFO - entered get_data_transformer object
+[2025-12-29 18:23:45,924] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-29 18:23:45,935] 42 root - INFO - entered the save_object function
+[2025-12-29 18:23:45,936] 46 root - INFO - exited the save_object method
+[2025-12-29 18:23:45,936] 29 root - INFO - model training started
+[2025-12-29 18:23:45,937] 73 root - INFO - hypertuning for RandomForest
+[2025-12-29 18:23:53,946] 73 root - INFO - hypertuning for DecisionTree
+[2025-12-29 18:23:54,229] 73 root - INFO - hypertuning for GradientBoosting
+[2025-12-29 18:24:02,594] 73 root - INFO - hypertuning for LogisticRegression
+[2025-12-29 18:24:03,050] 73 root - INFO - hypertuning for AdaBoost
+[2025-12-29 18:24:05,219] 73 root - INFO - hypertuning for KNN
+[2025-12-29 18:24:06,422] 42 root - INFO - entered the save_object function
+[2025-12-29 18:24:06,425] 46 root - INFO - exited the save_object method
+[2025-12-29 18:24:06,425] 105 root - INFO -  Model trainer artifact ModelTrainerArtifact(trained_model_file_path='Artifacts/12_29_2025_18_23_42/model_trainer/trainer_model', train_metric_artifact=ClassificationMetrices(f1_score=0.9941866394696584, precision_score=0.9942880456956344, recall_score=0.9940852539261676), test_metric_artifact=ClassificationMetrices(f1_score=0.9712031558185404, precision_score=0.9808764940239044, recall_score=0.96171875))

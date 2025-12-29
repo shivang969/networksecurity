@@ -39,5 +39,16 @@ DATA_TANSFORMATION_IMPUTER_PARAMS:dict={
     "weights":"uniform"
 }
 
+MODEL_TRAINER_DIR_NAME:str="model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR:str="trainer_model"
+MODEL_TRAINED_MODEL_NAME:str="model.pkl"
+MODEL_TRAINED_EXPECTED_SCORE:float=0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD:float=0.05
+
+
+SAVED_MODEL_DIR=os.path.join("saved_models")
+
+
+
 
 

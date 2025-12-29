@@ -1,0 +1,20 @@
+[2025-12-29 18:15:33,905] 18 root - INFO - intiate the data ingestion
+[2025-12-29 18:15:48,763] 57 root - INFO - performed train test split on the dataframe
+[2025-12-29 18:15:48,763] 60 root - INFO - exporitng train and test file path
+[2025-12-29 18:15:48,805] 35 root - INFO - required number of columns 32
+[2025-12-29 18:15:48,805] 36 root - INFO - data frame has columns32
+[2025-12-29 18:15:48,805] 35 root - INFO - required number of columns 32
+[2025-12-29 18:15:48,805] 36 root - INFO - data frame has columns32
+[2025-12-29 18:15:48,883] 47 root - INFO - entered data_transformation_method 
+[2025-12-29 18:15:48,883] 49 root - INFO - starting data transformation
+[2025-12-29 18:15:48,892] 34 root - INFO - entered get_data_transformer object
+[2025-12-29 18:15:48,892] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-29 18:15:48,896] 42 root - INFO - entered the save_object function
+[2025-12-29 18:15:48,901] 46 root - INFO - exited the save_object method
+[2025-12-29 18:15:48,901] 29 root - INFO - model training started
+[2025-12-29 18:15:48,901] 73 root - INFO - hypertuning for RandomForest
+[2025-12-29 18:15:54,263] 73 root - INFO - hypertuning for DecisionTree
+[2025-12-29 18:15:54,524] 73 root - INFO - hypertuning for GradientBoosting
+[2025-12-29 18:16:02,721] 73 root - INFO - hypertuning for LogisticRegression
+[2025-12-29 18:16:03,491] 73 root - INFO - hypertuning for AdaBoost
+[2025-12-29 18:16:05,700] 73 root - INFO - hypertuning for KNN
