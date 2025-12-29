@@ -17,7 +17,7 @@ from sklearn.linear_model import LogisticRegression,LinearRegression
 from sklearn.ensemble import GradientBoostingClassifier,RandomForestClassifier,AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
-
+import mlflow
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transfromation_artifact:DataTransforArtifact):
         try:
@@ -26,6 +26,19 @@ class ModelTrainer:
             
         except Exception as e:
             raise NetworksecurityException(e,sys)
+    
+    
+    def track_mlflow(self,best_model,classification_metrices):
+        with mlflow.start_run():
+            f1_score=classification_metrices.f1_score
+            recall_score=classification_metrices.recall_score   
+            precision_score=classification_metrices.precision_score
+            mlflow.log_metric("f1_score",f1_score)
+            mlflow.log_metric("precision",precision_score)
+            mlflow.log_metric("recall_score",recall_score)
+            mlflow.sklearn.log_model(best_model,"model")
+            
+            
     
     def train_model(self,x_train,y_train,x_test,y_test):
         models = {
@@ -36,7 +49,6 @@ class ModelTrainer:
                 "AdaBoost": AdaBoostClassifier(),
                 "KNN": KNeighborsClassifier()
             }
-        
         param_grids = {
 
             "RandomForest": {
@@ -93,6 +105,8 @@ class ModelTrainer:
         y_train_pred=best_model.predict(x_train)
         classification_test_report=get_classification_score(y_test_pred,y_test)
         classification_train_report=get_classification_score(y_train_pred,y_train)
+        self.track_mlflow(best_model,classification_train_report)
+        self.track_mlflow(best_model,classification_test_report)
         preprocessor=load_object(file_path=self.data_transformation_artifact.transformed_object_file_path)
         model_dir_path=os.path.dirname(self.model_trainer_config.model_trainer_file_path)
         os.makedirs(model_dir_path,exist_ok=True)
