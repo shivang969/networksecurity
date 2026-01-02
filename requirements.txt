@@ -11,4 +11,7 @@ certifi
 yaml
 dill
 mlflow
+dagshub
+fastapi
+uvicorn
 -e .

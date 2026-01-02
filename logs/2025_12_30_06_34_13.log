@@ -1,0 +1,29 @@
+[2025-12-30 06:34:17,093] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-30 06:34:17,122] 107 dagshub - INFO - Accessing as shivang969
+[2025-12-30 06:34:17,598] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shivang969/networksecurity "HTTP/1.1 200 OK"
+[2025-12-30 06:34:18,435] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-12-30 06:34:18,437] 107 dagshub - INFO - Initialized MLflow to track repo "shivang969/networksecurity"
+[2025-12-30 06:34:18,438] 107 dagshub - INFO - Repository shivang969/networksecurity initialized!
+[2025-12-30 06:34:18,438] 18 root - INFO - intiate the data ingestion
+[2025-12-30 06:34:20,397] 57 root - INFO - performed train test split on the dataframe
+[2025-12-30 06:34:20,397] 60 root - INFO - exporitng train and test file path
+[2025-12-30 06:34:20,439] 35 root - INFO - required number of columns 32
+[2025-12-30 06:34:20,439] 36 root - INFO - data frame has columns32
+[2025-12-30 06:34:20,439] 35 root - INFO - required number of columns 32
+[2025-12-30 06:34:20,439] 36 root - INFO - data frame has columns32
+[2025-12-30 06:34:20,515] 47 root - INFO - entered data_transformation_method 
+[2025-12-30 06:34:20,515] 49 root - INFO - starting data transformation
+[2025-12-30 06:34:20,524] 34 root - INFO - entered get_data_transformer object
+[2025-12-30 06:34:20,524] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-12-30 06:34:20,529] 42 root - INFO - entered the save_object function
+[2025-12-30 06:34:20,531] 46 root - INFO - exited the save_object method
+[2025-12-30 06:34:20,531] 29 root - INFO - model training started
+[2025-12-30 06:34:20,532] 73 root - INFO - hypertuning for RandomForest
+[2025-12-30 06:34:27,232] 73 root - INFO - hypertuning for DecisionTree
+[2025-12-30 06:34:27,535] 73 root - INFO - hypertuning for GradientBoosting
+[2025-12-30 06:34:36,585] 73 root - INFO - hypertuning for LogisticRegression
+[2025-12-30 06:34:37,219] 73 root - INFO - hypertuning for AdaBoost
+[2025-12-30 06:34:39,351] 73 root - INFO - hypertuning for KNN
+[2025-12-30 06:35:12,392] 42 root - INFO - entered the save_object function
+[2025-12-30 06:35:12,397] 46 root - INFO - exited the save_object method
+[2025-12-30 06:35:12,397] 122 root - INFO -  Model trainer artifact ModelTrainerArtifact(trained_model_file_path='Artifacts/12_30_2025_06_34_14/model_trainer/trainer_model', train_metric_artifact=ClassificationMetrices(f1_score=0.9896991330953595, precision_score=0.9898000815993472, recall_score=0.9895982051805018), test_metric_artifact=ClassificationMetrices(f1_score=0.968836291913215, precision_score=0.9784860557768924, recall_score=0.959375))

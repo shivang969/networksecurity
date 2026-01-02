@@ -1,0 +1,28 @@
+[2026-01-02 15:01:09,141] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-01-02 15:01:09,148] 107 dagshub - INFO - Accessing as shivang969
+[2026-01-02 15:01:10,780] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shivang969/networksecurity "HTTP/1.1 200 OK"
+[2026-01-02 15:01:12,129] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-01-02 15:01:12,132] 107 dagshub - INFO - Initialized MLflow to track repo "shivang969/networksecurity"
+[2026-01-02 15:01:12,133] 107 dagshub - INFO - Repository shivang969/networksecurity initialized!
+[2026-01-02 15:02:20,360] 57 root - INFO - performed train test split on the dataframe
+[2026-01-02 15:02:20,360] 60 root - INFO - exporitng train and test file path
+[2026-01-02 15:02:20,390] 34 root - INFO - data ingestion completed and artifact DataIngestionArtifact(trained_file_path='Artifacts/01_02_2026_15_01_05/data_ingestion/ingested/train.csv', test_file_path='Artifacts/01_02_2026_15_01_05/data_ingestion/ingested/test.csv')
+[2026-01-02 15:02:20,391] 43 root - INFO - intiate the data validation
+[2026-01-02 15:02:20,400] 35 root - INFO - required number of columns 32
+[2026-01-02 15:02:20,400] 36 root - INFO - data frame has columns32
+[2026-01-02 15:02:20,400] 35 root - INFO - required number of columns 32
+[2026-01-02 15:02:20,400] 36 root - INFO - data frame has columns32
+[2026-01-02 15:02:20,478] 47 root - INFO - entered data_transformation_method 
+[2026-01-02 15:02:20,478] 49 root - INFO - starting data transformation
+[2026-01-02 15:02:20,487] 34 root - INFO - entered get_data_transformer object
+[2026-01-02 15:02:20,487] 37 root - INFO - intitialise knnimputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-01-02 15:02:20,491] 42 root - INFO - entered the save_object function
+[2026-01-02 15:02:20,493] 46 root - INFO - exited the save_object method
+[2026-01-02 15:02:20,493] 42 root - INFO - entered the save_object function
+[2026-01-02 15:02:20,495] 46 root - INFO - exited the save_object method
+[2026-01-02 15:02:20,496] 73 root - INFO - hypertuning for RandomForest
+[2026-01-02 15:02:27,998] 73 root - INFO - hypertuning for DecisionTree
+[2026-01-02 15:02:28,296] 73 root - INFO - hypertuning for GradientBoosting
+[2026-01-02 15:02:34,948] 73 root - INFO - hypertuning for LogisticRegression
+[2026-01-02 15:02:35,432] 73 root - INFO - hypertuning for AdaBoost
+[2026-01-02 15:02:37,610] 73 root - INFO - hypertuning for KNN
